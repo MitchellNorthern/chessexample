@@ -9,20 +9,21 @@
  * Developer-defined styles
  *
  */
+ .grid {
+     display: grid;
+ }
 .grid--wrapper {
     display: grid;
-    width: 640px;
-    grid-template-columns: repeat(8, 80px);
-    grid-template-rows: 80px;
+    width: 100%;
+    grid-template-columns: repeat(8, minmax(2rem, 6rem));
+    grid-template-rows: minmax(2rem, 6rem);
     grid-auto-flow: column;
 }
 .game--tile {
-    width: 80px;
     background-color: #DDD;
     color: #222;
 }
 .game--tile-2 {
-    width: 80px;
     background-color: #222;
     color: #DDD;
 }

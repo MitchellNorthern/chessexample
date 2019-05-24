@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen bg-blue-100">
+    <div class="bg-blue-100">
         <GameBoard></GameBoard>
     </div>
 </template>
