@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@import '../../node_modules/chess-merida-font/css/chessmerida-webfont.css';
+
 /*
  *
  * Developer-defined styles
@@ -20,10 +22,18 @@
     grid-auto-flow: column;
 }
 .game--tile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #DDD;
     color: #222;
 }
 .game--tile-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #222;
     color: #DDD;
 }

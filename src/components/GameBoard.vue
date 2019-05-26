@@ -12,14 +12,30 @@
         <div class="flex p-24">
             <div class="grid m-auto max-h-sm sm:max-h-md">
                 <div v-for="i in 8" :key="i" class="grid--wrapper">
-                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'"></div>
-                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'"></div>
+                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'">
+                        <GamePiece color="w" piece="pawn"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'">
+                        <GamePiece color="b" piece="pawn"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'">
+                        <GamePiece color="w" piece="queen"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'">
+                        <GamePiece color="w" piece="king"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'">
+                        <GamePiece color="w" piece="bishop"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'">
+                        <GamePiece color="w" piece="rook"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'">
+                        <GamePiece color="w" piece="knight"></GamePiece>
+                    </div>
+                    <div :class="i % 2 === 0 ? 'game--tile-2' : 'game--tile'">
+                        <GamePiece color="w" piece="pawn"></GamePiece>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,8 +43,12 @@
 </template>
 
 <script>
+import GamePiece from '@/components/GamePiece.vue';
+
 export default {
     name: 'game-board',
-    components: {}
+    components: {
+        GamePiece
+    }
 }
 </script>

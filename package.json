@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "chess-merida-font": "0.0.3",
     "core-js": "^2.6.5",
     "postcss": "^7.0.16",
+    "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "tailwindcss": "^1.0.1",
     "vue": "^2.6.10"
