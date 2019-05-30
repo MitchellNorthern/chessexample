@@ -9,8 +9,8 @@
         <div class="fixed left-0 z-40 h-full w-12 sm:w-16 md:w-24 lg:w-40 bg-gray-600 text-white flex items-center text-center justify-center">
             Left Sidebar
         </div>
-        <div class="flex p-24">
-            <div class="grid m-auto max-h-sm sm:max-h-md">
+        <div class="flex pt-24">
+            <div class="grid m-auto max-w-sm sm:max-w-md md:max-w-2xl">
                 <div v-for="i in 8" :key="i" class="grid--wrapper">
                     <div :class="i % 2 === 0 ? 'game--tile' : 'game--tile-2'">
                         <GamePiece color="w" piece="pawn"></GamePiece>

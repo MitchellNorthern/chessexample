@@ -11,17 +11,6 @@ export default {
     name: 'home-page',
     components: {
         GameBoard
-    },
-    data() {
-        return {
-
-        };
-    },
-    methods: {
-
-    },
-    computed: {
-
     }
 }
 </script>

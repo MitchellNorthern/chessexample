@@ -1,6 +1,6 @@
 <template>
     <div>
-        <i class="large text-6xl cm" :class="'cm-' + color + '-' + piece" aria-hidden="true"></i>
+        <i v-if="color && piece" class="large text-6xl cm" :class="'cm-' + color + '-' + piece" aria-hidden="true"></i>
     </div>
 </template>
 

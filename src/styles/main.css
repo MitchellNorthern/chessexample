@@ -17,8 +17,8 @@
 .grid--wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(8, minmax(2rem, 6rem));
-    grid-template-rows: minmax(2rem, 6rem);
+    grid-template-columns: repeat(8, minmax(2rem, 5rem));
+    grid-template-rows: minmax(2rem, 5rem);
     grid-auto-flow: column;
 }
 .game--tile {
