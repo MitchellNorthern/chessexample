@@ -10,7 +10,7 @@
   "dependencies": {
     "chess-merida-font": "0.0.3",
     "core-js": "^2.6.5",
-    "postcss": "^7.0.16",
+    "postcss": "^7.0.36",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "tailwindcss": "^1.0.1",
